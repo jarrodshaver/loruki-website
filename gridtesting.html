@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*
+            column-gap: 1em;
+            row-gap: 1em;
+            */
+            gap: 1em;
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nesciunt saepe culpa magnam quia nihil alias
+            facere sequi, ex asperiores placeat at ducimus aliquam molestiae. Quisquam expedita nulla culpa nostrum
+            blanditiis, ut quae pariatur sint rerum deserunt optio iure eligendi nemo illum mollitia? Deleniti magni
+            rerum quam repellat earum! Libero iure recusandae fugiat tempore dolor praesentium repudiandae, placeat
+            magni dolores, dicta a minus animi veniam ipsa, ipsam temporibus? Eos repellendus deleniti molestias, ipsam
+            eum nulla expedita veritatis ex! Laboriosam, ad.
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis pariatur iusto aperiam vel, voluptatum nihil
+            autem reiciendis rem eligendi hic, consectetur quia voluptas saepe molestiae atque exercitationem ipsam
+            beatae distinctio!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nesciunt saepe culpa magnam quia nihil alias
+            facere sequi, ex asperiores placeat at ducimus aliquam molestiae. Quisquam expedita nulla culpa nostrum
+            blanditiis, ut quae pariatur sint rerum deserunt optio iure eligendi nemo illum mollitia? Deleniti magni
+            rerum quam repellat earum! Libero iure recusandae fugiat tempore dolor praesentium repudiandae, placeat
+            magni dolores, dicta a minus animi veniam ipsa, ipsam temporibus? Eos repellendus deleniti molestias, ipsam
+            eum nulla expedita veritatis ex! Laboriosam, ad.
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis pariatur iusto aperiam vel, voluptatum nihil
+            autem reiciendis rem eligendi hic, consectetur quia voluptas saepe molestiae atque exercitationem ipsam
+            beatae distinctio!
+        </div>
+    </div>
+</body>
+
+</html>
