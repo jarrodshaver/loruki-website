@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>CSS Layout</title>
+    <title>CSS Grids</title>
     <style>
         .wrapper {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns:repeat(3, 1fr);
             gap: 1em;
+            /* grid-auto-rows: 100px; */
             grid-auto-rows: minmax(100px, auto);
         }
 
@@ -16,52 +18,75 @@
             padding: 1em;
         }
 
-        .wrapper>div:nth-child(odd) {
-            background: #ddd;
-        }
-
         .nested {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
             grid-auto-rows: 70px;
             gap: 1em;
         }
 
-        .nested>div {
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .nested > div {
             border: #333 1px solid;
             padding: 1em;
         }
     </style>
 </head>
-
 <body>
     <div class="wrapper">
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, voluptatem pariatur? Eveniet minima, animi nemo laboriosam esse, autem quos veniam ullam, in optio ipsam. Impedit illo nihil voluptatum error officia ut odit consectetur expedita eaque. Nam quasi officiis enim at.
+    </div>
+    <div class="nested">
         <div>
-            Lorem ipsum dolor sit.
+            Lorem
         </div>
         <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illo tempore ullam veniam et repellat culpa
-            reprehenderit voluptates nulla aspernatur amet laudantium aut dignissimos assumenda eaque enim alias maxime
-            voluptatum exercitationem atque, expedita dolore rerum. Enim ab vitae delectus nam.
-        </div>
-        <div class="nested">
-            <div>Lorem</div>
-            <div>Lorem</div>
-            <div>Lorem</div>
+            Lorem
         </div>
         <div>
-            Lorem ipsum dolor sit.
+            Lorem
         </div>
         <div>
-            Lorem ipsum dolor sit.
+            Lorem
         </div>
         <div>
-            Lorem ipsum dolor sit.
+            Lorem
         </div>
         <div>
-            Lorem ipsum dolor sit.
+            Lorem
+        </div>
+        <div>
+            Lorem
+        </div>
+        <div>
+            Lorem
+        </div>
+        <div>
+            Lorem
         </div>
     </div>
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    </div>
 </body>
-
 </html>
